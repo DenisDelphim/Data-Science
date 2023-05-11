@@ -1,5 +1,2 @@
 # Data-Science
-##CURSO
-## bom dia
-
- 
+CURSO
