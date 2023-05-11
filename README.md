@@ -2,4 +2,4 @@
 "CURSO"
 "vai dar bom"
 "com certeza"
-# vai dar bom gi
+# vai dar bom !
