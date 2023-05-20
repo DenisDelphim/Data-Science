@@ -1,0 +1,41 @@
+def salario_():
+  while True:
+      try:
+       return float(input('salário: '))
+      except:
+        print(" valor invalido! Informe novamente")
+def funcionario_():
+    nome_ = input("nome: ")
+    salario_ = str(input("salario: "))
+    return (nome_, salario_)
+def aumento_(lista_de_funcionarios):
+  total = 0 
+  for cont, funcionario in enumerate(lista_de_funcionarios):
+    funcionario = funcionario_()
+    if  funcionario_ <= 2000:
+       novo_salario_ = salario_+ (salario_ * 1.20)
+    elif salario_ <= 5000:
+       novo_salario_ = salario_+ (salario_ * 1.15)
+  else:
+     if salario_ >= 5000:
+        salario_ *= 1.05
+        total += salario_
+        lista_de_funcionarios[cont] = (nome_, salario_)
+     return total    
+def principal_():
+    lista_de_funcionarios = []
+    total_antigo = [0]
+    while True:
+        funcionario = funcionario_()
+        lista_de_funcionarios.append(funcionario)
+        total_antigo += funcionario_()
+        res = input("continuar (s/n): ")
+        total_novo = aumento_(lista_de_funcionarios)
+        total_aumento = total_novo (total_antigo)
+        print("total de aumento:", total_novo)
+        print("funcionarios com salario abaixo de R$ 2000,00:")
+        for nome, salario in lista_de_funcionarios():
+         if salario < 2000:
+          print(nome)
+if __name__ == "__main__":
+  principal_()
